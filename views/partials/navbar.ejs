@@ -1,0 +1,29 @@
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WikiProject_Argentina.svg/2048px-WikiProject_Argentina.svg.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            Visit.ARG
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link "  href="/">Home</a>
+            <a class="nav-link" href="/campgrounds">Places</a>
+            <a class="nav-link" href="/campgrounds/new">New place</a>
+
+        </div>
+        <div class="navbar-nav ms-auto">
+            <% if(!currentUser) { %> 
+            <a class="nav-link" href="/login">Login</a>
+            <a class="nav-link" href="/register">Register</a>
+            <% }else {%> 
+            <a class="nav-link" href="/logout">Logout</a>
+            <% } %> 
+        </div>
+    </div>
+</nav>

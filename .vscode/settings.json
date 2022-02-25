@@ -1,0 +1,5 @@
+{
+    "workbench.hover.delay": 5000,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "editor.formatOnSave": true
+}
